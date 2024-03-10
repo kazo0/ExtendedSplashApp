@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"ExtendedSplashApp.Windows (Unpackaged)": {
+			"commandName": "Project"
+		},
+		"ExtendedSplashApp.Windows (Package)": {
+			"commandName": "MsixPackage"
+		}
+	}
+}
