@@ -7,38 +7,33 @@
 			 xmlns:utu="using:Uno.Toolkit.UI"
 			 mc:Ignorable="d">
 
-	<!-- Loading Content "layer" -->
-	<utu:ExtendedSplashScreen x:Name="Splash"
-							  HorizontalAlignment="Stretch"
-							  VerticalAlignment="Stretch"
-							  HorizontalContentAlignment="Stretch"
-							  VerticalContentAlignment="Stretch">
+	
+	<utu:ExtendedSplashScreen x:Name="Splash">
+		
+		<!-- Loading Content "layer" -->
+		<utu:ExtendedSplashScreen.LoadingContent>
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="2*" />
+					<RowDefinition />
+				</Grid.RowDefinitions>
 
-		<utu:ExtendedSplashScreen.LoadingContentTemplate>
-			<DataTemplate>
-				<Grid>
-					<Grid.RowDefinitions>
-						<RowDefinition Height="2*" />
-						<RowDefinition />
-					</Grid.RowDefinitions>
+				<ProgressRing IsActive="True"
+								Grid.Row="1"
+								Background="Transparent"
+								VerticalAlignment="Center"
+								HorizontalAlignment="Center"
+								Height="75"
+								Width="75" />
 
-					<ProgressRing IsActive="True"
-								  Grid.Row="1"
-								  Background="Transparent"
-								  VerticalAlignment="Center"
-								  HorizontalAlignment="Center"
-								  Height="75"
-								  Width="75" />
-
-					<TextBlock Text="My Branding Text Here!"
-							   Grid.Row="1"
-							   Margin="16"
-							   FontSize="16"
-							   VerticalAlignment="Bottom"
-							   HorizontalAlignment="Center" />
-				</Grid>
-			</DataTemplate>
-		</utu:ExtendedSplashScreen.LoadingContentTemplate>
+				<TextBlock Text="My Branding Text Here!"
+							Grid.Row="1"
+							Margin="16"
+							FontSize="16"
+							VerticalAlignment="Bottom"
+							HorizontalAlignment="Center" />
+			</Grid>
+		</utu:ExtendedSplashScreen.LoadingContent>
 
 		<!-- App Content "layer" -->
 		<utu:ExtendedSplashScreen.Content>
