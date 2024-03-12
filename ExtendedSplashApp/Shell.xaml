@@ -7,6 +7,7 @@
 			 xmlns:utu="using:Uno.Toolkit.UI"
 			 mc:Ignorable="d">
 
+	<!-- Loading Content "layer" -->
 	<utu:ExtendedSplashScreen x:Name="Splash"
 							  HorizontalAlignment="Stretch"
 							  VerticalAlignment="Stretch"
@@ -39,6 +40,7 @@
 			</DataTemplate>
 		</utu:ExtendedSplashScreen.LoadingContentTemplate>
 
+		<!-- App Content "layer" -->
 		<utu:ExtendedSplashScreen.Content>
 			<Frame x:Name="ShellFrame" />
 		</utu:ExtendedSplashScreen.Content>
